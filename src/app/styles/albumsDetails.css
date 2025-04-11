@@ -1,0 +1,126 @@
+.album-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh; /* Ensures it covers full height initially */
+    background: url('/background.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* Keeps the image in place while scrolling */
+    padding: 20px;
+    color: white;
+}
+
+.album-container {
+    background: rgba(0, 0, 0, 0.7); /* Transparent Black */
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%; /* Reduce width to center it */
+    max-width: 900px; /* Limit max width */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.album-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.album-image {
+    width: 100%;
+    max-width: 300px; /* Set a fixed max-width */
+    border-radius: 10px;
+    margin: 0 auto 20px auto; /* Center the image */
+    display: block; /* Ensure it's a block element */
+}
+
+.song-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.song-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.song-name {
+    flex: 1;
+    text-align: left;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.play-btn, .download-btn {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease-in-out;
+}
+
+.play-btn {
+    background: #28a745; /* Green */
+    color: white;
+}
+
+.download-btn {
+    background: #007bff; /* Blue */
+    color: white;
+    text-decoration: none;
+}
+
+.play-btn:hover {
+    background: #218838;
+}
+
+.download-btn:hover {
+    background: #0056b3;
+}
+
+
+
+
+@media (max-width: 421px) {
+    .album-container {
+        padding: 10px;
+    }
+
+    .album-title {
+        font-size: 20px;
+    }
+
+    .album-image {
+        max-width: 100%;
+    }
+
+    .song-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .action-buttons {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 5px;
+    }
+
+    .play-btn, .download-btn {
+        flex: 1 1 45%;
+        font-size: 12px;
+        padding: 6px 8px;
+        text-align: center;
+    }
+}
