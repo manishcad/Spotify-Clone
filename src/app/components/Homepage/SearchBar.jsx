@@ -16,7 +16,7 @@ const SearchBar = () => {
 
   return (
     <div className="homepage p-5">
-      <h1 className="title">"Fuel your soul with sound"</h1>
+      <h1 className="title">"Fuel your soul with Music"</h1>
       <div className="search-container">
         <input 
           type="text" 
